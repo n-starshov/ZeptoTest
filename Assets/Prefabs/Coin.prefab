@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1980709976927879143}
   - component: {fileID: 3071984258113206277}
   - component: {fileID: 1157135598405568813}
-  - component: {fileID: 6788453628543792945}
+  - component: {fileID: 1714583496364069200}
   m_Layer: 6
   m_Name: Coin
   m_TagString: Untagged
@@ -113,8 +113,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9472b634d0254fd699c329c76ab4d34a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _collectStrategy: {fileID: 6788453628543792945}
---- !u!114 &6788453628543792945
+  _collectStrategy: {fileID: 1714583496364069200}
+  _collider: {fileID: 3071984258113206277}
+--- !u!114 &1714583496364069200
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -123,6 +124,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1826927529098282118}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe3fcefcbab34e88b8c0a6ecce00c0fa, type: 3}
+  m_Script: {fileID: 11500000, guid: 232cd518cdaa3459e84d2d1b762e5aef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animationDuration: 1

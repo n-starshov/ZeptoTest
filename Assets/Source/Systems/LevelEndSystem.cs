@@ -13,7 +13,6 @@ namespace Client
         {
             foreach (var i in _filter)
             {
-                Debug.Log("Level Finished");
                 UpdateBestRating();
                 _hudModel.SwitchState(HUDModel.ViewState.LevelEnd);
             }

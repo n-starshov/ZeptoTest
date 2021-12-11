@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniRx", "UniRx.csproj", "{286d3777-750b-f73e-e31d-689227458ef1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DOTween.Modules", "DOTween.Modules.csproj", "{1c997248-cf77-a5a9-9aea-b42f5616b1e9}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{1dd7a949-1f11-5058-c7ec-ba3eda09928a}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leopotam.Ecs", "Leopotam.Ecs.csproj", "{dede8d65-b90c-7fcc-b08b-8b7813fca348}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniRx", "UniRx.csproj", "{286d3777-750b-f73e-e31d-689227458ef1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{fbf111be-e769-1b43-bf89-0bdda8c5a882}"
 EndProject
@@ -19,6 +21,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{286d3777-750b-f73e-e31d-689227458ef1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{286d3777-750b-f73e-e31d-689227458ef1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{286d3777-750b-f73e-e31d-689227458ef1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{286d3777-750b-f73e-e31d-689227458ef1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1c997248-cf77-a5a9-9aea-b42f5616b1e9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1c997248-cf77-a5a9-9aea-b42f5616b1e9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1c997248-cf77-a5a9-9aea-b42f5616b1e9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1c997248-cf77-a5a9-9aea-b42f5616b1e9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1dd7a949-1f11-5058-c7ec-ba3eda09928a}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1dd7a949-1f11-5058-c7ec-ba3eda09928a}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1dd7a949-1f11-5058-c7ec-ba3eda09928a}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,10 +37,6 @@ Global
 		{dede8d65-b90c-7fcc-b08b-8b7813fca348}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{dede8d65-b90c-7fcc-b08b-8b7813fca348}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{dede8d65-b90c-7fcc-b08b-8b7813fca348}.Release|Any CPU.Build.0 = Release|Any CPU
-		{286d3777-750b-f73e-e31d-689227458ef1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{286d3777-750b-f73e-e31d-689227458ef1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{286d3777-750b-f73e-e31d-689227458ef1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{286d3777-750b-f73e-e31d-689227458ef1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{fbf111be-e769-1b43-bf89-0bdda8c5a882}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{fbf111be-e769-1b43-bf89-0bdda8c5a882}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{fbf111be-e769-1b43-bf89-0bdda8c5a882}.Release|Any CPU.ActiveCfg = Release|Any CPU

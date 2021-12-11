@@ -1,6 +1,7 @@
 using System;
 using Leopotam.Ecs;
 using UniRx;
+using UnityEngine;
 
 namespace Client
 {
@@ -19,7 +20,17 @@ namespace Client
             {
                 _filter.Get1(i).View.Collect();
                 
-                _levelProgress.CoinCollected++;
+                switch (_filter.Get1(i).View.RewardType)
+                {
+                    case RewardType.PlusOne:
+                        _levelProgress.CoinCollected++;
+                        break;
+                    case RewardType.Add10Percent:
+                        _levelProgress.CoinCollected = Mathf.CeilToInt(_levelProgress.CoinCollected * 1.1f);
+                        break;
+                    default:
+                        throw new NotImplementedException();
+                }
                 _hudModel.UpdateCoinCollected(_levelProgress.CoinCollected);
 
                 var position = _filter.Get1(i).View.Position;
@@ -27,7 +38,9 @@ namespace Client
                     .Subscribe(_ =>
                     {
                         ref var spawnRequest = ref _world.NewEntity().Get<SpawnObjectComponent>();
-                        spawnRequest.CellType = MapCellType.Coin;
+                        spawnRequest.CellType = UnityEngine.Random.value > _config.ChanceToSpawnGoldCoin 
+                            ? MapCellType.GoldCoin 
+                            : MapCellType.Coin;
                         spawnRequest.Position = position;
                     }).AddTo(_disposables);
                 

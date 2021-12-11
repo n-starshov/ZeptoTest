@@ -15,6 +15,9 @@ namespace Client
                 {
                     ref var moveDir = ref _filter.Get2(i);
                     moveDir.Direction *= -1;
+                    
+                    ref var player = ref _filter.Get3(i);
+                    player.Value.SetMoveDirection(moveDir.Direction);
                 }
             }
         }

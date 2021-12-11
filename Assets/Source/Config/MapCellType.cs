@@ -6,5 +6,6 @@ public enum MapCellType
     None,
     Wall,
     Actr, // player, short naming for 
-    Coin
+    Coin,
+    GoldCoin
 }

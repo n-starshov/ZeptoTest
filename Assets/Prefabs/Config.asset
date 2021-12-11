@@ -15,9 +15,11 @@ MonoBehaviour:
   _player: {fileID: 3700640684595623889, guid: 79405c0a6342a4910895d17ee0c5a097, type: 3}
   _wall: {fileID: 562815213254796525, guid: 0702921da2788499f96ddd0875a1d937, type: 3}
   _coin: {fileID: 1826927529098282118, guid: 2bb5b0ddd0ea44d28902548e06e58a0d, type: 3}
+  _goldCoin: {fileID: 1826927529098282118, guid: 31783a3730f434047a187f6262761799, type: 3}
   _jumpForce: 4
-  _initDirection: {x: -1, y: 0}
+  _initDirection: {x: 1, y: 0}
   _playerSpeed: 2
   _maxFallingSpeed: -1
-  _levelDurationSec: 60
-  _respawnCoinInterval: 5
+  _levelDurationSec: 30
+  _chanceToSpawnGoldCoin: 0.8
+  _respawnCoinInterval: 12
